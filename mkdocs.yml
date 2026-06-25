@@ -1,0 +1,69 @@
+site_name: Портфолио по базам данных
+site_description: Работы по дисциплине «Базы данных» — Гриненко Никита
+site_author: Гриненко Никита Дмитриевич
+site_url: https://nikitagrinn.github.io/portfolio-bd/
+
+theme:
+  name: material
+  language: ru
+
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Темная тема
+
+    - scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+  font:
+    text: Roboto
+    code: Fira Code
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - md_in_html
+
+nav:
+  - Главная: index.md
+  - Обо мне: about.md
+
+  - Базы данных:
+      - Задание 1: databases/Задание №1. Создание простой БД/index.md
+      - Задание 2: databases/Задание №2. Сохранение целостности. Forward engineering/index.md
+      - Задание 3: databases/Задание №3 Решение задач реляционной алгебры/index.md
+      - Задание 4: databases/Задание №4 Решение задач реляционной алгебры/index.md
+      - Задание 5: databases/Задание №5 Задание №5. Проектирование реляционной БД (НФБК)/index.md
+      - Задание 6: databases/Задание №6. Нормализация реляционных баз данных/sr4_portfolio.md
+      - Лабораторная 6: databases/Лабораторная работа №6/index.md
+      - Финальное задание: databases/Финальное задание по дисциплине/promt.md
+      - Сертификат Stepik: databases/Сертификат по курсу Stepik/index.md
+
+  - Контакты: contacts.md
